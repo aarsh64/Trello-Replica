@@ -1,0 +1,1187 @@
+Looking for git in: git
+Using git 2.7.4 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/pk
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.spec.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.css
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.css
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/app.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.spec.ts
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/app.component.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/app.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/app.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/drag-drop/typings/drag-events.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/drag-drop/typings/
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/app.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/app.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/drag-drop.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/drag-drop/typings/drag-events.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/drag-drop/typings/
+> git show :dribble/node_modules/@angular/cdk/drag-drop.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/tsconfig.spec.json
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.css
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/drag-drop/typings/drag-events.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/drag-drop/typings/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/drag-drop/typings/drag-events.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/drag-drop/typings/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/overlay/typings/position/connected-position.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/overlay/typings/position/
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/overlay/typings/position/overlay-position-builder.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/overlay/typings/position/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/node_modules/@angular/cdk/overlay/typings/position/connected-position.d.ts
+> git ls-files --stage -- dribble/node_modules/@angular/cdk/overlay/typings/position/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/navigation/navigation.component.css
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/app.component.css
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/app-routing.module.ts
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/text-area/text-area.component.html
+> git ls-files --stage -- dribble/src/app/text-area/
+> git show :dribble/src/app/app.component.html
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/app.component.css
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/app.component.css
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/app.component.html
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/app.component.css
+> git ls-files --stage -- dribble/src/app/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/navigation/navigation.component.css
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/navigation/navigation.component.html
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/navigation/navigation.component.css
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/navigation/navigation.component.html
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/navigation/navigation.component.css
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/navigation/navigation.component.css
+> git ls-files --stage -- dribble/src/app/navigation/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/styles.css
+> git ls-files --stage -- dribble/src/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.spec.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.css
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.html
+> git ls-files --stage -- dribble/src/app/display/
+> git show :dribble/src/app/display/display.component.ts
+> git ls-files --stage -- dribble/src/app/display/

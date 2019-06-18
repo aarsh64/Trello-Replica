@@ -1,0 +1,265 @@
+<div cdkDropListGroup>
+  <div id="containter" class="container">
+    <div class="gridContainer">
+      
+      
+      <div class="card">
+        <div class="header">
+          <h5>
+            Backlog<i
+              style="margin-left:80%; color:#B4BBC4;"
+              class="fas fa-ellipsis-h"
+            ></i>
+          </h5>
+        </div>
+        <div
+          cdkDropList
+          [cdkDropListData]="backlog"
+          (cdkDropListDropped)="drop($event)"
+          class="card"
+        >
+          <div class="innerCard" *ngFor="let x of backlog" cdkDrag>
+            <span>{{ x }}</span
+            ><br />
+            <div>
+              <br />
+              <div class="priority">
+                <div id="backlog"></div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <br />
+        <div class="down">
+          <div #base CdkOverlayOrigin>
+            <!-- <form [formGroup]="myForm">
+              <input formControlName="in" id="add" type="text" />
+            </form> -->
+          </div>
+          <div>
+            <button class="stickBottom"    
+            (click)="load()"
+            
+            >
+              <i class="fas fa-plus-circle"></i> Add task
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <h5>
+            Current Task<i
+              style="margin-left:80%; color:#B4BBC4;"
+              class="fas fa-ellipsis-h"
+            ></i>
+          </h5>
+        </div>
+
+        <div
+          cdkDropList
+          [cdkDropListData]="currentTask"
+          (cdkDropListDropped)="drop($event)"
+          class="card"
+        >
+          <div class="innerCard" *ngFor="let x of currentTask" cdkDrag>
+            <span>{{ x }}</span
+            ><br />
+            <div>
+              <br />
+              <div class="priority">
+                <div id="currentTask"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <br />
+        <div class="down">
+          <div>
+            <!-- <form [formGroup]="myForm">
+                <input formControlName="in" id="add" type="text" />
+              </form> -->
+          </div>
+          <div>
+            <button 
+              class="stickBottom"
+              cdkOverlayOrigin
+              (click)="cTask()"
+            >
+              <i class="fas fa-plus-circle" ></i> Add task
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+          <div class="header">
+            <h5>
+              Validate<i
+                style="margin-left:80%; color:#B4BBC4;"
+                class="fas fa-ellipsis-h"
+              ></i>
+            </h5>
+          </div>
+  
+          <div
+            cdkDropList
+            [cdkDropListData]="validate"
+            (cdkDropListDropped)="drop($event)"
+            class="card"
+          >
+            <div class="innerCard" *ngFor="let x of validate" cdkDrag>
+              <span>{{ x }}</span
+              ><br />
+              <div>
+                <br />
+                <div class="priority">
+                  <div id="valid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <br />
+          <div class="down">
+            <div>
+              <!-- <form [formGroup]="myForm">
+                  <input formControlName="in" id="add" type="text" />
+                </form> -->
+            </div>
+            <div>
+              <button
+                class="stickBottom"
+                cdkOverlayOrigin
+                id="bt1"
+                (click)="valid()"
+              >
+                <i class="fas fa-plus-circle"></i> Add task
+              </button>
+            </div>
+          </div>
+        </div>
+     
+
+      <div class="card">
+        <div class="header">
+          <h5>
+            Done<i
+              style="margin-left:80%; color:#B4BBC4;"
+              class="fas fa-ellipsis-h"
+            ></i>
+          </h5>
+        </div>
+
+        <div
+          cdkDropList
+          [cdkDropListData]="done"
+          (cdkDropListDropped)="drop($event)"
+          class="card"
+        >
+          <div class="innerCard" *ngFor="let x of done" cdkDrag>
+            <span>{{ x }}</span
+            ><br />
+            <div>
+              <br />
+              <div class="priority">
+                <div id="complete"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <br />
+        <div class="down">
+          <div>
+            <!-- <form [formGroup]="myForm">
+                <input formControlName="in" id="add" type="text" />
+              </form> -->
+          </div>
+          <div>
+            <button
+              class="stickBottom"
+              cdkOverlayOrigin
+              id="bt1"
+              (click)="load()"
+            >
+              <i class="fas fa-plus-circle"></i> Add task
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideButton">
+      <button class="buton1" (click)="newBoard()">
+        <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add Board
+      </button>
+    </div>
+  </div>
+</div>
+
+<ng-template #backlogTemp
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+>
+  <div class="gr">
+    <form [formGroup]="nForm">
+      <input
+        placeholder="Enter text for the card"
+        type="text"
+        formControlName="in1"
+      />
+      <div class="over">
+        <button class="cross" type="submit" (click)="close()">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <button class="b1" (click)="add()" type="submit">Add</button>
+      </div>
+    </form>
+  </div>
+</ng-template>
+
+<ng-template #currentTemp
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+>
+  <div class="gr1">
+    <form [formGroup]="nForm">
+      <input
+        placeholder="Enter text for the card"
+        type="text"
+        formControlName="in2"
+      />
+      <div class="over">
+        <button class="cross" type="submit" (click)="close()">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <button class="b1" (click)="add1()" type="submit">Add</button>
+      </div>
+    </form>
+  </div>
+</ng-template>
+
+<ng-template #validTemp
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+>
+  <div class="gr2">
+    <form [formGroup]="nForm">
+      <input
+        placeholder="Enter text for the card"
+        type="text"
+        formControlName="in3"
+      />
+      <div class="over">
+        <button class="cross" type="submit" (click)="close()">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <button class="b1" (click)="add2()" type="submit">Add</button>
+      </div>
+    </form>
+  </div>
+</ng-template>

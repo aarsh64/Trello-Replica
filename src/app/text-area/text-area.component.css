@@ -1,0 +1,34 @@
+.over {
+  display: flex;
+  flex-direction: row;
+}
+
+.b1 {
+  text-align: center;
+  padding: 5px;
+  color: #c1fcfe;
+  font-weight: 600;
+  background-color: #e6f2fe;
+  border: #e6f2fe;
+  border-radius: 4px;
+  margin-left: 110px;
+  background-color: #0a81fa;
+  border-radius: 10%;
+}
+.cross {
+  color: #7E8D93;
+  background-color:transparent;
+  border: none;
+  box-shadow: none;
+
+}
+input {
+  height: auto;
+  border-radius: 4px;
+  width: auto;
+  padding: 2%;
+  font-size: 12px;
+  background-color: white;
+  color: #55535b;
+  margin: 0% 3% 5% 3%;
+}

@@ -1,0 +1,10 @@
+Looking for git in: git
+Using git 2.7.4 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/pk
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git show :autocomplete.html
+> git ls-files --stage -- ./
+> git check-ignore -v -z --stdin
