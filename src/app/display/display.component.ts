@@ -131,7 +131,7 @@ cTask(){
 this.overlayRef.attach(this.templatePortal);
    
 }
-    valid() {1
+    valid() {
       const positionStrategy=this.overlay.position().connectedTo(this.base,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
   this.templatePortal= new TemplatePortal(this.validTemp,this._viewContainerRef);
   // const positionStrategy=this.overlay.position().global().centerHorizontally().centerVertically();
