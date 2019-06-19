@@ -10,8 +10,8 @@
 .navigation a {
    
   color: #2e84d2;
-  max-width: 8%;
-  max-height: 8%;
+  max-width: 10%;
+  max-height: 10%;
   text-align: center;
   text-decoration: none;
   border-right: 10%;
@@ -51,7 +51,7 @@
     color:#C7C6C9;
     border-radius: 4%;
     height:2vw;
-    width: 20vw;
+    width: 30vw;
     background-color: transparent;
     border: black;
     /* box-shadow: -1px 0px 0px 0px #f4f7fd;  */

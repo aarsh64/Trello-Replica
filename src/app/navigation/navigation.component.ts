@@ -12,7 +12,12 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
   bellButton(){
-    console.log('working.....');
+    console.log('bell button working....');
   }
-
+invite(){
+  console.log('invite button....');
+}
+search(){
+  console.log('searching working....');
+}
 }
