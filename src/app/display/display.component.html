@@ -94,52 +94,52 @@
         </div>
       </div>
       <div class="card">
-          <div class="header">
-            <h5>
-              Validate<i
-                style="margin-left:80%; color:#B4BBC4;"
-                class="fas fa-ellipsis-h"
-              ></i>
-            </h5>
-          </div>
-  
-          <div
-            cdkDropList
-            [cdkDropListData]="validate"
-            (cdkDropListDropped)="drop($event)"
-            class="card"
-          >
-            <div class="innerCard" *ngFor="let x of validate" cdkDrag>
-              <span>{{ x }}</span
-              ><br />
-              <div>
-                <br />
-                <div class="priority">
-                  <div id="valid"></div>
-                </div>
+        <div class="header">
+          <h5>
+            Validate<i
+              style="margin-left:80%; color:#B4BBC4;"
+              class="fas fa-ellipsis-h"
+            ></i>
+          </h5>
+        </div>
+
+        <div
+          cdkDropList
+          [cdkDropListData]="done"
+          (cdkDropListDropped)="drop($event)"
+          class="card"
+        >
+          <div class="innerCard" *ngFor="let x of validate" cdkDrag>
+            <span>{{ x }}</span
+            ><br />
+            <div>
+              <br />
+              <div class="priority">
+                <div id="valid"></div>
               </div>
             </div>
           </div>
-          <!--  -->
-          <br />
-          <div class="down">
-            <div>
-              <!-- <form [formGroup]="myForm">
-                  <input formControlName="in" id="add" type="text" />
-                </form> -->
-            </div>
-            <div>
-              <button
-                class="stickBottom"
-                cdkOverlayOrigin
-                id="bt1"
-                (click)="valid()"
-              >
-                <i class="fas fa-plus-circle"></i> Add task
-              </button>
-            </div>
+        </div>
+        <!--  -->
+        <br />
+        <div class="down">
+          <div>
+            <!-- <form [formGroup]="myForm">
+                <input formControlName="in" id="add" type="text" />
+              </form> -->
+          </div>
+          <div>
+            <button
+              class="stickBottom"
+              cdkOverlayOrigin
+              id="bt1"
+              (click)="load()"
+            >
+              <i class="fas fa-plus-circle"></i> Add task
+            </button>
           </div>
         </div>
+      </div>
      
 
       <div class="card">
