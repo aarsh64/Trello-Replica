@@ -71,8 +71,8 @@ export class DisplayComponent implements OnInit {
     td2:ElementRef<any>;
     @ViewChild('base',{static:false})
     base: ElementRef<any>; 
-    @ViewChild('base1',{static:false})
-    base1: ElementRef<any>; 
+    // @ViewChild('h5',{static:false})
+    // h5: ElementRef<any>; 
     @ViewChild('base2',{static:false})
     base2: ElementRef<any>;  
   @ViewChild('base3',{static:false})
@@ -301,9 +301,7 @@ undoFunction(){
       }
 
           if(this.selectedCard==0){
-            this.backlog.push(this.nForm.value.in1);
-            this.nForm.reset();
-            this.overlayRef.dispose();
+
           
           }
          else if(this.selectedCard==1){
