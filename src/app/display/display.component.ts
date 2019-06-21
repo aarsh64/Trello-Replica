@@ -159,7 +159,6 @@ onTap(i:any){
   console.log('selected Card:',this.selectedCard);
 }
   load(i:number) {
-   if(i==0){
     const positionStrategy=this.overlay.position().connectedTo(this.base,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
     console.log('entered');
@@ -167,21 +166,8 @@ onTap(i:any){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
-   }
     
-   
-    if(i==2){
-      const positionStrategy=this.overlay.position().connectedTo(this.base1,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
-      this.templatePortal= new TemplatePortal(this.validTemp,this._viewContainerRef);
-      console.log('entered');
-      this.overlayRef = this.overlay.create({ 
-        positionStrategy,
-       });
-     this.overlayRef.attach(this.templatePortal);
-
-    }
-     
-    }
+  }
     cTask(){
 
       
@@ -380,5 +366,6 @@ undoFunction(){
   }
   deleteList(i){
     this.displayComp.splice(i,1); 
+    this.overlayRef.dispose();
   }
 }
