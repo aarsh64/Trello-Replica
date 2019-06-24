@@ -2,11 +2,11 @@
   <div id="containter" class="container">
     <div class="gridContainer">
       
-      <div *ngFor="let w of displayComp;let i=index;" (click)="onTap(i)">
-      <div class="card">
+      <div  *ngFor="let w of displayComp;let i=index;" [class.selected]="w === SelectedCard" (click)="onTap(w,i)">
+      <div id="card{{i}}" class="card">
         <div #header class="header">
-          <h5 #h5>
-            {{w.header}}<a  (click)="dots()"><i
+          <h5  #h5>
+            {{w.header}}.{{i}}<a  (click)="dots(i)"><i
               style="margin-left:80%; color:#B4BBC4;"
               class="fas fa-ellipsis-h"
             ></i></a>
@@ -20,7 +20,7 @@
         
           class="card"
         >
-          <div class="innerCard"  *ngFor="let g of w.cardsName" cdkDrag>
+          <div class="innerCard"  *ngFor="let g of w.cardsName;" cdkDrag>
             <span>{{g}}</span
             ><br />
             <div >
@@ -34,14 +34,13 @@
         </div>
         <!--  -->
         <br />
-        <div><br><br></div>
-        <div class="down">
-          <div #base #base1 #base2 CdkOverlayOrigin>
+        <div id="down{{i}}">
+          <div CdkOverlayOrigin>
             <!-- <form [formGroup]="myForm">
               <input formControlName="in" id="add" type="text" />
             </form> -->
           </div>
-          <div>
+          <div #base1>
             <button class="stickBottom"    
             (click)="load(i)"
             
@@ -50,13 +49,18 @@
             </button>
           </div>
         </div>
+     
       </div>
     </div>
        
 
       
     </div>
-    
+    <ng-template #dotfunc>
+        <div class="backlogRem">
+            <button class="delButton"(click)="undoFunction(i)">Undo? </button>    
+        </div>
+      </ng-template>
     <div #sideButtonId class="sideButton">
       <button class="buton1" (click)="sideButton()">
         <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add board
@@ -68,32 +72,28 @@
   </div>
 </div>
 
-
 <ng-template #backlogTemp 
-  cdkConnectedOverlay
+cdkConnectedOverlay
 >
-  <div class="gr">
-    <form [formGroup]="nForm">
-      <input
-        placeholder="Enter text for the card"
-        type="text"
-        formControlName="in1"
-      />
-      <div class="over">
-        <button class="cross" type="submit" (click)="close()">
-          <i class="far fa-times-circle"></i>
-        </button>
-        <button class="b1" [disabled]="!(this.nForm.controls.in1.valid)" (click)="add()" type="submit">Add card</button>
-      </div>
-    </form>
-  </div>
+<div  class="gr{{selectedCard}}">
+  <form [formGroup]="nForm">
+    <input
+      placeholder="Enter text for the card"
+      type="text"
+      formControlName="in1"
+    />
+    <div class="over">
+      <button class="cross" type="submit" (click)="close()">
+        <i class="far fa-times-circle"></i>
+      </button>
+      <button class="b1" [disabled]="!(this.nForm.controls.in1.valid)" (click)="add()" type="submit">Add card</button>
+    </div>
+  </form>
+</div>
 </ng-template>
 
-<ng-template #dotfunc>
-  <div class="backlogRem">
-      <button class="delButton"(click)="undoFunction()">Undo? </button>    
-  </div>
-</ng-template>
+
+
 <ng-template #dotfunc1>
   <div class="backlogRem">
       <button class="delButton"(click)="cTaskDel()">Undo? </button>    
@@ -107,8 +107,8 @@
 
 
 <ng-template #newGrid>
-  <div class="gr2">
-    <form [formGroup]="nForm">
+  <div class="newAdd">
+    <form style="background-color:#83E384; border-radius:4px;" [formGroup]="nForm">
       <label>Board Name:</label>
       <input type="text" formControlName="boardName"  placeholder='Enter Board Name:'><br>
       <!-- <label>Add Card:</label>
@@ -142,17 +142,38 @@
       <input
         placeholder="Enter text for the card"
         type="text"
+        formControlName="in1"
+      />
+      <div class="over">
+        <button class="cross" type="submit" (click)="close()">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <button class="b1" (click)="add()" type="submit">Add card</button>
+      </div>
+    </form>
+  </div>
+</ng-template>
+
+<ng-template #doneTemp
+  cdkConnectedOverlay
+>
+  <div class="gr3">
+    <form [formGroup]="nForm">
+      <input
+        placeholder="Enter text for the card"
+        type="text"
         formControlName="in3"
       />
       <div class="over">
         <button class="cross" type="submit" (click)="close()">
           <i class="far fa-times-circle"></i>
         </button>
-        <button class="b1" (click)="add2()" type="submit">Add card</button>
+        <button class="b1" (click)="addNew()" type="submit">Add card</button>
       </div>
     </form>
   </div>
 </ng-template>
+
 
 
 <!-- <ng-template #newGrid>
@@ -262,25 +283,6 @@
   </div>
 </ng-template>
 
-<ng-template #doneTemp
-  cdkConnectedOverlay
->
-  <div class="gr">
-    <form [formGroup]="nForm">
-      <input
-        placeholder="Enter text for the card"
-        type="text"
-        formControlName="in3"
-      />
-      <div class="over">
-        <button class="cross" type="submit" (click)="close()">
-          <i class="far fa-times-circle"></i>
-        </button>
-        <button class="b1" (click)="addNew()" type="submit">Add card</button>
-      </div>
-    </form>
-  </div>
-</ng-template>
 
 
 
