@@ -391,7 +391,7 @@ if(i==7){
    this.overlayRef.attach(this.templatePortal);
   
 }  
-
+  
 
 
   }
