@@ -4,9 +4,9 @@
       
       <div  *ngFor="let w of displayComp;let i=index;" [class.selected]="w === SelectedCard" (click)="onTap(w,i)">
       <div id="card{{i}}" class="card">
-        <div #header class="header">
+        <div #header >
           <h5  #h5>
-            {{w.header}}.{{i}}<a  (click)="dots(i)"><i
+            {{w.header}}.{{i}}<a id="header{{i}}" (click)="dots(i)"><i
               style="margin-left:80%; color:#B4BBC4;"
               class="fas fa-ellipsis-h"
             ></i></a>

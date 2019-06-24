@@ -101,7 +101,7 @@ div[id="card1"]{
   box-shadow: none;
   border: none;
 }
-.header {
+#header {
   overflow: hidden;
 }
 #backlog {
@@ -252,7 +252,7 @@ backface-visibility: hidden;
   background-color: #F24855;
   border-radius: 10%;
   margin-bottom: 0;
-  position: absolute;
+  position: relative;
 }
 .cross {
   color: #7E8D93;
@@ -296,7 +296,6 @@ input {
   border-color: black;
   border-radius: 4px;
   background-color: #E6F2FE;
-  margin-left: 240px;
 }
 li:hover{
   background:white;
@@ -310,12 +309,6 @@ div[class*="gr"]{
   /* margin-left: 20px; */
   border-radius:4px;
   position: relative;
-}
-.gr0{
-
-}
-.gr1{
- 
 }
 
 .newAdd{

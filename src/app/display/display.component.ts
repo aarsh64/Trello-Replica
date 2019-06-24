@@ -302,15 +302,98 @@ onTap(w:any,i:any){
 
   //  ...............3-Dots function()............
 dots(i:number){
+
+  if(i==0){
+      const v=document.getElementById('header0');
+      const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+      this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+        console.log('entered');
+        this.overlayRef = this.overlay.create({ 
+          positionStrategy,
+         });
+       this.overlayRef.attach(this.templatePortal);
+      
+  }
   console.log('3-dot function-1');
-    const positionStrategy=this.overlay.position().connectedTo(this.h5,{originX:'start',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  if(i==1){
+    const v=document.getElementById('header1');
+    const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
       console.log('entered');
       this.overlayRef = this.overlay.create({ 
         positionStrategy,
        });
      this.overlayRef.attach(this.templatePortal);
-     
+    
+} 
+if(i==2){
+  const v=document.getElementById('header2');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);
+  
+} 
+if(i==3){
+  const v=document.getElementById('header3');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);
+  
+} 
+if(i==4){
+  const v=document.getElementById('header4');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);  
+}  
+if(i==5){
+  const v=document.getElementById('header5');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);
+  
+} 
+if(i==6){
+  const v=document.getElementById('header6');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);
+  
+}  
+if(i==7){
+  const v=document.getElementById('header7');
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+   this.overlayRef.attach(this.templatePortal);
+  
+}  
+
+
+
   }
   
   dots1(){
