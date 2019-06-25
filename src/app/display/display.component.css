@@ -51,7 +51,7 @@ div[id="card1"]{
 div[class*="gr"]{
   height:100%;
   width:auto;
-  bottom:0;
+  bottom:5;
   /* margin-left: 20px; */
   border-radius:4px;
   position: relative;
@@ -88,6 +88,7 @@ div[class*="gr"]{
   color: #7f8d95;
   box-shadow: none;
   border: none;
+  width:auto;
   font-size: 12px;
   font-weight: 550;
   margin:0px 0px 10px 10px;
@@ -111,6 +112,7 @@ div[class*="gr"]{
 }
 .header {
   overflow: hidden;
+  cursor: pointer;
 }
 #backlog {
   width: 40px;
@@ -225,17 +227,20 @@ backface-visibility: hidden;
   flex-direction: row; */
   /* width:1fr; */
 
-  width: auto;
+  width:236px;
   background-color:#E6ECF3;
   position: absolute;
 }
 .form{
   height:auto;
   width:500px;
+  border-radius: 4px;
   background-color:black;
   border-color: black; 
 
 }
+
+/* b1 is for add button which is used to add whole new activity/task in a card...  */
 .b1 {
   text-align: center;
   padding: 5px;
@@ -244,7 +249,22 @@ backface-visibility: hidden;
   background-color: #E6ECF3;
   border: #e6f2fe;
   border-radius: 4px;
-  margin-left: 140px;
+  margin-left: 135px;
+  background-color: #0a81fa;
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
+
+/* b2 is for add button which is used to add whole new card in container...  */
+.b2{
+  text-align: center;
+  padding: 5px;
+  color: #c1fcfe;
+  font-weight: 600;
+  background-color: #E6ECF3;
+  border: #e6f2fe;
+  border-radius: 4px;
+  margin-left: 175px;
   background-color: #0a81fa;
   border-radius: 10%;
   margin-bottom: 5px;
@@ -252,6 +272,7 @@ backface-visibility: hidden;
 .delButton{
   text-align: center;
   padding: 5px;
+  margin-left:30px;
   color: white;
   font-weight: 200;
   background-color: #E6ECF3;
@@ -272,7 +293,7 @@ backface-visibility: hidden;
 input {
   height: 25px;
   border-radius: 4px;
-  width: 232px;
+  width: 216px;
   padding: 2%;
   font-size: 12px;
   background-color: #FFFF;
@@ -301,16 +322,20 @@ input {
 
 
 .backlogRem{
+  width:100%;
   border-color: black;
   border-radius: 4px;
-  background-color: #E6F2FE;
+  margin-left:10px;
+  background-color:#E6ECF3;
 }
 li:hover{
   background:white;
+  cursor: pointer;
 }
 
 
 
 .newAdd{
   margin:auto auto auto auto;
+ 
 }

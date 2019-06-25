@@ -158,6 +158,7 @@ onTap(w:any,i:any){
   console.log('selected Card:',this.selectedCard,'index',i);
 }
   load(i:number) {
+    this.overlayRef.dispose();
       if(i==0){
         const z=document.getElementById('down0');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
@@ -267,6 +268,7 @@ onTap(w:any,i:any){
 
 
   sideButton() {
+    this.overlayRef.dispose();
     console.log("working.....");
   
       const positionStrategy=this.overlay.position().global().centerHorizontally().centerVertically();
@@ -286,7 +288,7 @@ onTap(w:any,i:any){
       console.log(this.nForm.value.boardName);
       console.log(this.nForm.value.boardCard);
       if(this.cards>=8){
-        console.error('Max 8 cards are allowed!')
+       window.alert('Max 8 cards can be there!');
       }
     else{
       this.displayComp.push({
@@ -302,10 +304,10 @@ onTap(w:any,i:any){
 
   //  ...............3-Dots function()............
 dots(i:number){
-
+  
   if(i==0){
       const v=document.getElementById('header0');
-      const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+      const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
       this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
         console.log('entered');
         this.overlayRef = this.overlay.create({ 
@@ -317,7 +319,7 @@ dots(i:number){
   console.log('3-dot function-1');
   if(i==1){
     const v=document.getElementById('header1');
-    const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+    const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
     this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
       console.log('entered');
       this.overlayRef = this.overlay.create({ 
@@ -328,7 +330,7 @@ dots(i:number){
 } 
 if(i==2){
   const v=document.getElementById('header2');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -339,7 +341,7 @@ if(i==2){
 } 
 if(i==3){
   const v=document.getElementById('header3');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -350,7 +352,7 @@ if(i==3){
 } 
 if(i==4){
   const v=document.getElementById('header4');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -360,7 +362,7 @@ if(i==4){
 }  
 if(i==5){
   const v=document.getElementById('header5');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -371,7 +373,7 @@ if(i==5){
 } 
 if(i==6){
   const v=document.getElementById('header6');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -382,7 +384,7 @@ if(i==6){
 }  
 if(i==7){
   const v=document.getElementById('header7');
-  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
+  const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
@@ -411,7 +413,7 @@ if(i==7){
 
 
 undoFunction(i:number){
-
+  
         console.log('inside undo:',i);
         if(this.selectedCard==0){
           this.backlog.splice(this.backlog.length-1,1);
@@ -446,7 +448,82 @@ undoFunction(i:number){
             
 
 }
+moveTo(j:number){
+     let  i=this.selectedCard;
+    console.log(this.backlog.length);
+    console.log('moveda to array:',this.displayComp[j].cardsName);
+    if(i==j){
+      window.alert("not possible!");
+      this.overlayRef.dispose();
+      
+    }
+    if(i==0){
+      for(let k=0;k<this.backlog.length;k++){
+            this.displayComp[j].cardsName.push(this.backlog[k]);  
+            this.overlayRef.dispose();    
+      }
+      this.backlog.splice(0,this.backlog.length);
+           
+    }  
+    if(i==1){
+      for(let k=0;k<this.currentTask.length;k++){
+            this.displayComp[j].cardsName.push(this.currentTask[k]); 
+            this.overlayRef.dispose();     
+      }
+      this.currentTask.splice(0,this.currentTask.length);
+    } 
+    if(i==2){
+      for(let k=0;k<this.validate.length;k++){
+            this.displayComp[j].cardsName.push(this.validate[k]);  
+            this.overlayRef.dispose();    
+      }
+      this.validate.splice(0,this.validate.length);
+    }
+    if(i==3){
+      for(let k=0;k<this.done.length;k++){
+            this.displayComp[j].cardsName.push(this.done[k]);
+            this.overlayRef.dispose();      
+      }
+      this.done.splice(0,this.done.length);
+    }
 
+   
+ }
+ copyTo(j:number){
+  let  i=this.selectedCard;
+  console.log(this.backlog.length);
+  console.log('moveda to array:',this.displayComp[j].cardsName);
+  if(i==j){
+    window.alert("not possible!");
+    this.overlayRef.dispose();
+    
+  }
+  if(i==0){
+    for(let k=0;k<this.backlog.length;k++){
+          this.displayComp[j].cardsName.push(this.backlog[k]);  
+          this.overlayRef.dispose();    
+    }
+         
+  }  
+  if(i==1){
+    for(let k=0;k<this.currentTask.length;k++){
+          this.displayComp[j].cardsName.push(this.currentTask[k]); 
+          this.overlayRef.dispose();     
+    }
+  } 
+  if(i==2){
+    for(let k=0;k<this.validate.length;k++){
+          this.displayComp[j].cardsName.push(this.validate[k]);  
+          this.overlayRef.dispose();    
+    }
+  }
+  if(i==3){
+    for(let k=0;k<this.done.length;k++){
+          this.displayComp[j].cardsName.push(this.done[k]);
+          this.overlayRef.dispose();      
+    }
+  }
+}
 
     // ........Add something using overlay(Overlay)for all cards................
     add(i:number) {

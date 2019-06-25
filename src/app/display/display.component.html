@@ -49,18 +49,35 @@
             </button>
           </div>
         </div>
-     
       </div>
-    </div>
-       
+      <ng-template #dotfunc>
+          <div class="backlogRem">
+            <div>
+            <label style="margin:10px 0px 0px 90px;"><b>Task Actions</b></label>
+              <button style="color:black;margin-left:90px;"class="cross" type="submit" (click)="close()">
+                  <i class="far fa-times-circle"></i>
+                </button><br><hr style="width:80%;">
+            <button class="delButton"(click)="undoFunction(i)">Undo? </button>  <br>
+                &nbsp;&nbsp;<button class="stickBottom" (click)="load(i)">Add Task</button><br>
+              </div>
+              <div>
+                &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Move tasks to..</b></label><br><hr style="width:80%;">
+            <ul *ngFor="let d of displayComp;let j=index;let i=selectedCard;" (click)="moveTo(j)">
+              <li>{{d.header}}</li>
+            </ul> 
+          </div>
+          <div>
+            &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Copy tasks to..</b></label><br><hr style="width:80%;">
+            <ul *ngFor="let d of displayComp;let j=index;let i=selectedCard;" (click)="copyTo(j)">
+              <li>{{d.header}}</li>
+            </ul>
+          </div>
+          </div>
+        </ng-template>
+    </div>          
+  </div>
+    
 
-      
-    </div>
-    <ng-template #dotfunc>
-        <div class="backlogRem">
-            <button class="delButton"(click)="undoFunction(i)">Undo? </button>    
-        </div>
-      </ng-template>
     <div #sideButtonId class="sideButton">
       <button class="buton1" (click)="sideButton()">
         <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add board
@@ -108,7 +125,9 @@ cdkConnectedOverlay
 
 <ng-template #newGrid>
   <div class="newAdd">
-    <form style="background-color:#83E384; border-radius:4px;" [formGroup]="nForm">
+    <div></div>
+    <div></div>
+    <form style="background-color:#E6F2FE; border-radius:4px;width:100%;" [formGroup]="nForm">
       <label>Board Name:</label>
       <input type="text" formControlName="boardName"  placeholder='Enter Board Name:'><br>
       <!-- <label>Add Card:</label>
@@ -116,7 +135,7 @@ cdkConnectedOverlay
        <button class="cross" type="submit" (click)="close()">
           <i class="far fa-times-circle"></i>
         </button>
-      <button class="b1" (click)="addBoard()">Add</button>
+      <button class="b2" (click)="addBoard()">Add</button>
     </form>
     </div>
 </ng-template>
