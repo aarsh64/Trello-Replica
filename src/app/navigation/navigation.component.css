@@ -64,13 +64,21 @@
   border-radius: 4px;
   margin-left: 50%;
   background-color: #F24855;
-  border-radius: 10%;
+  border-radius: 10%; 
   /*    box-shadow: -1px 0px 0px 0px #ececec; */
 }
 #face {
   margin-left: 3%;
 }
-
+.notification{
+  height:auto;
+  width: auto;
+  color: #2e84d2;
+ padding: 5px;
+  background-color: #E6F2FE;
+  border-radius: 4px;
+  border-color:#2e84d2 ;
+}
 #borderLine{
     /* margin-top:10px; */
     margin-left:20px;
@@ -80,8 +88,23 @@
     background-color:#ECECEC;
 }
 
-
-
+h2{
+  color:#3181D7;
+  background-color: #E6F2FE;
+  width: auto;
+  height: 50px;
+  border-radius: 4px;
+}
+hr{
+  width:90%;
+}
+.cross {
+  color:#3181D7;
+  background-color:transparent;
+  border: none;
+  box-shadow: none;
+ margin-left:100px;
+}
 ::-webkit-input-placeholder {
     color: #B7B6B9;
     font-size: 13px;

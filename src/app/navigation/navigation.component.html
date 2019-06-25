@@ -1,11 +1,31 @@
 <div class="navigation">
   <a style=" box-shadow:-1px 0px 0px 0px #F4F7FD;" href="#"><i style="size:5x;"class="fab fa-trello"></i></a> <div id="borderLine"></div>
-  <a href=""><i class="fas fa-users"></i></a>
+  <a (click)="users()"><i class="fas fa-users"></i></a>
   <button id="inviteButton" (click)="invite()"><b>Invite</b></button> <div id="borderLine"></div>
   <button class="searchbutton" (click)="search()"><i class="fas fa-search"></i></button><input class="searchbar" placeholder="Search on page"/>
-  <button id="bellButton" style="color:white" (click)="bellButton()">
+  <button #notification id="bellButton" style="color:white" (click)="bellButton()">
     <i class="fas fa-bell"></i>
   </button>
   <div id="borderLine"></div>
   <a href="" id="face"><i style="size:3x;" class="fas fa-user"></i></a>
 </div>
+
+<ng-template #usersTemplate>
+  <h2>Sorry,Currentlty we're not official so we cant connect to others.</h2>
+</ng-template>
+
+<ng-template #notifications>
+  
+  <div class="notification">
+    <div>
+      <span style="margin-left:100px;"><b>Notifications</b></span>
+      <button class="cross" type="submit" (click)="close()">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <hr>
+      </div>
+      <p style="margin-left:100px; font-weight: 50;">No Unread Notifications</p>
+  
+    </div>
+ 
+</ng-template>
