@@ -36,7 +36,6 @@ import { TextAreaComponent } from "../text-area/text-area.component";
 import { Template } from '@angular/compiler/src/render3/r3_ast';
 import { viewClassName } from '@angular/compiler';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-// import {displayStructure} from 'src/app/displayStructure';
 import { displayStructure } from '../displayStructure';
 import { Identifiers } from '@angular/compiler/src/render3/r3_identifiers';
 @Component({
@@ -48,40 +47,16 @@ import { Identifiers } from '@angular/compiler/src/render3/r3_identifiers';
 export class DisplayComponent implements OnInit {
   @ViewChild('backlogTemp',{static:false})
     backlogTemp:TemplateRef<any>;
-  @ViewChild('currentTemp',{static:false})
-    currentTemp:TemplateRef<any>;
-  @ViewChild('validTemp',{static:false})
-    validTemp:TemplateRef<any>;
-    @ViewChild('newAct',{static:false})
-    newAct:TemplateRef<any>;
-    @ViewChild('doneTemp',{static:false})
-    doneTemp:TemplateRef<any>;  
-    @ViewChild('dotfunc',{static:false})
-    dotfunc:TemplateRef<any>;
-    @ViewChild('dotfunc1',{static:false})
-    dotfunc1:TemplateRef<any>;
-    @ViewChild('dotfunc2',{static:false})
-    dotfunc2:TemplateRef<any>;
-    @ViewChild('newGrid',{static:false})
-    newGrid:TemplateRef<any>;
-    @ViewChild('h5',{static:false})
-    h5:ElementRef<any>;
-    @ViewChild('td1',{static:false})
-    td1:ElementRef<any>;
-    @ViewChild('td2',{static:false})
-    td2:ElementRef<any>;
-    @ViewChild('base1',{static:false})
+    @ViewChild('subMenuTemplate',{static:false})
+    subMenuTemplate:TemplateRef<any>;
+    @ViewChild('newCardTemplate',{static:false})
+    newCardTemplate:TemplateRef<any>;
+     @ViewChild('base1',{static:false})
     base1: ElementRef<any>; 
-    // @ViewChild('h5',{static:false})
-    // h5: ElementRef<any>; 
-    @ViewChild('card0',{static:false})
-    card0: ElementRef<any>;  
-  @ViewChild('base3',{static:false})
-  base3:ElementRef<any>;
-  @ViewChild('delList',{static:false})
-  delList:TemplateRef<any>;
-  @ViewChild('buton',{static:false})
-  buton:ElementRef<any>;
+   @ViewChild('deleteList',{static:false})
+    deleteList:TemplateRef<any>;
+  @ViewChild('binButton',{static:false})
+  binButton:ElementRef<any>;
   @ViewChild('sideButtonId',{static:false})
   sideButtonId:ElementRef<any>;
  
@@ -325,7 +300,7 @@ load1(){
   sideButton() {
     console.log("working.....");
       const positionStrategy=this.overlay.position().global().centerHorizontally().centerVertically();
-      this.templatePortal=new TemplatePortal(this.newGrid,this._viewContainerRef); 
+      this.templatePortal=new TemplatePortal(this.newCardTemplate,this._viewContainerRef); 
       this.overlayRef=this.overlay.create({
         width:10000000,
         height:1000000,
@@ -351,14 +326,14 @@ load1(){
     } 
    }
   
-
   //  ...............3-Dots function()............
-dots(i:number){
+
+  dots(i:number){
   
   if(i==0){
       const v=document.getElementById('header0');
       const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-      this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+      this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
         console.log('entered');
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
@@ -370,7 +345,7 @@ dots(i:number){
   if(i==1){
     const v=document.getElementById('header1');
     const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-    this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+    this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
       console.log('entered');
       this.overlayRef = this.overlay.create({ 
         positionStrategy,
@@ -381,7 +356,7 @@ dots(i:number){
 if(i==2){
   const v=document.getElementById('header2');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -392,7 +367,7 @@ if(i==2){
 if(i==3){
   const v=document.getElementById('header3');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -403,7 +378,7 @@ if(i==3){
 if(i==4){
   const v=document.getElementById('header4');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -413,7 +388,7 @@ if(i==4){
 if(i==5){
   const v=document.getElementById('header5');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -424,7 +399,7 @@ if(i==5){
 if(i==6){
   const v=document.getElementById('header6');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -435,7 +410,7 @@ if(i==6){
 if(i==7){
   const v=document.getElementById('header7');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
-  this.templatePortal= new TemplatePortal(this.dotfunc,this._viewContainerRef);
+  this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
     console.log('entered');
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
@@ -443,22 +418,7 @@ if(i==7){
    this.overlayRef.attach(this.templatePortal);
   
 }  
-  
-
-
-  }
-  
-  dots1(){
-    console.log('3-dot function-1');
-    const positionStrategy=this.overlay.position().connectedTo(this.td1,{originX:'start',originY:'bottom'},{overlayX:'start',overlayY:'bottom'});
-    this.templatePortal= new TemplatePortal(this.dotfunc1,this._viewContainerRef);
-      console.log('entered');
-      this.overlayRef = this.overlay.create({ 
-        positionStrategy,
-       });
-     this.overlayRef.attach(this.templatePortal)
-  }
-   
+  }   
 
 //.....to remove the last task from the speicifc card.....
 
@@ -579,7 +539,8 @@ moveTo(j:number){
   }
 }
 
-    // ........Add something using overlay(Overlay)for all cards................
+// ........Add something using overlay(Overlay)for all cards................
+ 
     add(i:number) {
       if(this.selectedCard>7){
         console.error('Max 8 cards are allowed!');
@@ -639,12 +600,14 @@ moveTo(j:number){
    
     close() {
       this.overlayRef.dispose();
-    }
-// ............used to call(pop-up) the delete-List template...
-  bellButton(){
+    } 
+  
+ // ............used to call(pop-up) the delete-List template...
+ 
+binButtonFunction(){
     console.log('entered');
-    const positionStrategy=this.overlay.position().connectedTo(this.buton,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'top'});
-    this.templatePortal=new TemplatePortal(this.delList,this._viewContainerRef);
+    const positionStrategy=this.overlay.position().connectedTo(this.binButton,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'top'});
+    this.templatePortal=new TemplatePortal(this.deleteList,this._viewContainerRef);
     this.overlayRef=this.overlay.create({
         positionStrategy,
     });
@@ -653,12 +616,13 @@ moveTo(j:number){
 
   // ..............To remove the whole card from the container..........
   // (1) is called by the sidebar... (2) is called from the individual card
-  deleteList(i){
+ 
+  deleteListFunction(i){
     console.log('index',i);
     this.displayComp.splice(i,1); 
     this.overlayRef.dispose();
   }
-  deleteList1(){
+  deleteListFunction1(){
     this.displayComp.splice(this.selectedCard,1);
     this.overlayRef.dispose();
   }

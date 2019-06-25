@@ -8,8 +8,7 @@
   position: relative;
   z-index: 10;
 }
-.navigation a {
-   
+.navigation a { 
   color: #2e84d2;
   max-width: 10%;
   max-height: 10%;
@@ -58,7 +57,7 @@
     /* box-shadow: -1px 0px 0px 0px #f4f7fd;  */
   
 }
-#buton {
+#bellButton {
   padding: 10px;
   background-color: #e6f2fe;
   border: #e6f2fe;
