@@ -6,7 +6,7 @@
       <div id="card{{i}}" class="card">
         <div #header >
           <h5  #h5>
-            {{w.header}}.{{i}}<a id="header{{i}}" (click)="dots(i)"><i
+            {{w.header}}<a id="header{{i}}" (click)="dots(i)"><i
               style="margin-left:80%; color:#B4BBC4;"
               class="fas fa-ellipsis-h"
             ></i></a>
@@ -57,17 +57,18 @@
               <button style="color:black;margin-left:90px;"class="cross" type="submit" (click)="close()">
                   <i class="far fa-times-circle"></i>
                 </button><br><hr style="width:80%;">
-            <button class="delButton"(click)="undoFunction(i)">Undo? </button>  <br>
-                &nbsp;&nbsp;<button class="stickBottom" (click)="load(i)">Add Task</button><br>
-              </div>
+                &nbsp;&nbsp; <button class="stickBottom"(click)="undoFunction(i)">Undo? </button>  
+                &nbsp;&nbsp;<button class="stickBottom" (click)="load1(i)">Add Task</button>
+                &nbsp;&nbsp;<button class="stickBottom"(click)="deleteList1(index)">Remove card</button>
+              </div><br>
               <div>
-                &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Move tasks to..</b></label><br><hr style="width:80%;">
+                &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Move tasks to..</b></label><hr style="width:80%;">
             <ul *ngFor="let d of displayComp;let j=index;let i=selectedCard;" (click)="moveTo(j)">
               <li>{{d.header}}</li>
             </ul> 
           </div>
           <div>
-            &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Copy tasks to..</b></label><br><hr style="width:80%;">
+            &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Copy tasks to..</b></label><hr style="width:80%;">
             <ul *ngFor="let d of displayComp;let j=index;let i=selectedCard;" (click)="copyTo(j)">
               <li>{{d.header}}</li>
             </ul>

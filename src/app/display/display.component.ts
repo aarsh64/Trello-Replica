@@ -102,7 +102,6 @@ export class DisplayComponent implements OnInit {
   templatePortal:TemplatePortal<any>;  //----------
    currentTask = ["Hey1", "Done1", "So is it working properly or not??"];
   validate = ["lol"];
-  // gridContainerArray=[this.backlog,this.currentTask,this.validate,this.done];
   backlog=['Working?','Demo'];
   myForm: FormGroup;
   overlayRef: any;
@@ -148,17 +147,14 @@ export class DisplayComponent implements OnInit {
       );
     }
   }
-  // drop(event: CdkDragDrop<string[]>) {
-  //   moveItemInArray(this.displayComp , event.previousIndex, event.currentIndex);
-  // }
+ 
 // ..............................................................................
 
 onTap(w:any,i:any){
   this.selectedCard=i;
   console.log('selected Card:',this.selectedCard,'index',i);
 }
-  load(i:number) {
-    this.overlayRef.dispose();
+ load(i:number) {
       if(i==0){
         const z=document.getElementById('down0');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
@@ -168,7 +164,6 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
-     
       }
       if(i==1){
         const z=document.getElementById('down1');
@@ -178,8 +173,7 @@ onTap(w:any,i:any){
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
          });
-         this.overlayRef.attach(this.templatePortal);
-     
+         this.overlayRef.attach(this.templatePortal); 
       }
       if(i==2){
         const z=document.getElementById('down2');
@@ -190,7 +184,6 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
-     
       }
       if(i==3){
         const z=document.getElementById('down3');
@@ -201,7 +194,6 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
-     
       }
       if(i==4){
         const z=document.getElementById('down4');
@@ -212,7 +204,6 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
-     
       }
       if(i==5){
         const z=document.getElementById('down5');
@@ -222,8 +213,7 @@ onTap(w:any,i:any){
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
          });
-         this.overlayRef.attach(this.templatePortal);
-     
+         this.overlayRef.attach(this.templatePortal);   
       }
       if(i==6){
         const z=document.getElementById('down6');
@@ -233,8 +223,7 @@ onTap(w:any,i:any){
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
          });
-         this.overlayRef.attach(this.templatePortal);
-     
+         this.overlayRef.attach(this.templatePortal);    
       }
       if(i==7){
         const z=document.getElementById('down7');
@@ -245,32 +234,96 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
-     
-      }
-     
-
-    
+      }   
   }
+
+load1(){
+ let i=this.selectedCard;
+  if(i==0){
+    const z=document.getElementById('down0');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);
+  }
+  if(i==1){
+    const z=document.getElementById('down1');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal); 
+  }
+  if(i==2){
+    const z=document.getElementById('down2');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);
+  }
+  if(i==3){
+    const z=document.getElementById('down3');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);
+  }
+  if(i==4){
+    const z=document.getElementById('down4');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);
+  }
+  if(i==5){
+    const z=document.getElementById('down5');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);   
+  }
+  if(i==6){
+    const z=document.getElementById('down6');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);    
+  }
+  if(i==7){
+    const z=document.getElementById('down7');
+    const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
+    this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
+    console.log('entered');
+    this.overlayRef = this.overlay.create({ 
+      positionStrategy,
+     });
+     this.overlayRef.attach(this.templatePortal);
+  }   
   
-    
-    // load4(){
-    //   // const positionStrategy=this.overlay.position().connectedTo(this.base4,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'bottom'});
-    //   this.templatePortal= new TemplatePortal(this.newAct,this._viewContainerRef);
-    //   console.log('entered');
-    //   this.overlayRef = this.overlay.create({ 
-
-    //     // positionStrategy,
-    //    });
-    //    this.overlayRef.attach(this.templatePortal);
-    
-    // }
-
-
+}
 
   sideButton() {
-    this.overlayRef.dispose();
     console.log("working.....");
-  
       const positionStrategy=this.overlay.position().global().centerHorizontally().centerVertically();
       this.templatePortal=new TemplatePortal(this.newGrid,this._viewContainerRef); 
       this.overlayRef=this.overlay.create({
@@ -279,9 +332,6 @@ onTap(w:any,i:any){
         positionStrategy  
       });
       this.overlayRef.attach(this.templatePortal);
-      
-    
-  
   }
 
     addBoard(){
@@ -410,7 +460,7 @@ if(i==7){
   }
    
 
-
+//.....to remove the last task from the speicifc card.....
 
 undoFunction(i:number){
   
@@ -445,9 +495,10 @@ undoFunction(i:number){
         else{
           window.alert('Something went wrong!');
         }
-            
-
 }
+
+// used to move all the tasks from one card to another....
+
 moveTo(j:number){
      let  i=this.selectedCard;
     console.log(this.backlog.length);
@@ -489,6 +540,9 @@ moveTo(j:number){
 
    
  }
+
+ // ..... used to copy content from one card to another...
+
  copyTo(j:number){
   let  i=this.selectedCard;
   console.log(this.backlog.length);
@@ -586,6 +640,7 @@ moveTo(j:number){
     close() {
       this.overlayRef.dispose();
     }
+// ............used to call(pop-up) the delete-List template...
   bellButton(){
     console.log('entered');
     const positionStrategy=this.overlay.position().connectedTo(this.buton,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'top'});
@@ -595,8 +650,34 @@ moveTo(j:number){
     });
     this.overlayRef.attach(this.templatePortal);
   }
+
+  // ..............To remove the whole card from the container..........
+  // (1) is called by the sidebar... (2) is called from the individual card
   deleteList(i){
+    console.log('index',i);
     this.displayComp.splice(i,1); 
     this.overlayRef.dispose();
   }
+  deleteList1(){
+    this.displayComp.splice(this.selectedCard,1);
+    this.overlayRef.dispose();
+  }
 }
+
+
+  
+    
+    // load4(){
+    //   // const positionStrategy=this.overlay.position().connectedTo(this.base4,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'bottom'});
+    //   this.templatePortal= new TemplatePortal(this.newAct,this._viewContainerRef);
+    //   console.log('entered');
+    //   this.overlayRef = this.overlay.create({ 
+
+    //     // positionStrategy,
+    //    });
+    //    this.overlayRef.attach(this.templatePortal);
+    
+    // }
+
+
+
