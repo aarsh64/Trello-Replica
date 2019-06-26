@@ -400,6 +400,9 @@ load1(){
   dots(i:number){
   
   if(i==0){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
       const v=document.getElementById('header0');
       const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
       this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
