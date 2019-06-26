@@ -85,13 +85,14 @@ export class DisplayComponent implements OnInit {
   displayComp:displayStructure[] = [{header:'Backlog',cardsName:this.backlog},
                                  {header:'CurrentTask',cardsName:this.currentTask},
                                  {header:'Validate',cardsName:this.validate},
-                                 { header:'Done...',cardsName:this.done} ];
+                                 { header:'Done',cardsName:this.done} ];
   nForm: FormGroup;
   templateRef: Portal<any>;
   newArray= ['demo'];
   boardName:any;
   selectedCard: number;
     dumb=2;
+    overlayOpen=0;
   constructor(private overlay: Overlay,private _viewContainerRef: ViewContainerRef) {}
     
   ngOnInit() {
@@ -131,6 +132,9 @@ onTap(w:any,i:any){
 }
  load(i:number) {
       if(i==0){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down0');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -139,8 +143,12 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;
       }
       if(i==1){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down1');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -149,8 +157,12 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal); 
+         this.overlayOpen=1;
       }
       if(i==2){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down2');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -159,8 +171,12 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;
       }
       if(i==3){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down3');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -169,8 +185,12 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;
       }
       if(i==4){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down4');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -179,8 +199,12 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;
       }
       if(i==5){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down5');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -188,9 +212,13 @@ onTap(w:any,i:any){
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
          });
-         this.overlayRef.attach(this.templatePortal);   
+         this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;   
       }
       if(i==6){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down6');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -198,9 +226,13 @@ onTap(w:any,i:any){
         this.overlayRef = this.overlay.create({ 
           positionStrategy,
          });
-         this.overlayRef.attach(this.templatePortal);    
+         this.overlayRef.attach(this.templatePortal); 
+         this.overlayOpen=1;   
       }
       if(i==7){
+        if(this.overlayOpen==1){
+          this.overlayRef.dispose();
+        }
         const z=document.getElementById('down7');
         const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
         this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -209,12 +241,16 @@ onTap(w:any,i:any){
           positionStrategy,
          });
          this.overlayRef.attach(this.templatePortal);
+         this.overlayOpen=1;
       }   
   }
 
 load1(){
  let i=this.selectedCard;
   if(i==0){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down0');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -223,8 +259,12 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
   }
   if(i==1){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down1');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -233,8 +273,12 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal); 
+     this.overlayOpen=1;
   }
   if(i==2){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down2');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -243,8 +287,12 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
   }
   if(i==3){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down3');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -253,8 +301,12 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
   }
   if(i==4){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down4');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -263,8 +315,12 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
   }
   if(i==5){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down5');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -272,9 +328,13 @@ load1(){
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
      });
-     this.overlayRef.attach(this.templatePortal);   
+     this.overlayRef.attach(this.templatePortal);  
+     this.overlayOpen=1; 
   }
   if(i==6){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down6');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -282,9 +342,13 @@ load1(){
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
      });
-     this.overlayRef.attach(this.templatePortal);    
+     this.overlayRef.attach(this.templatePortal); 
+     this.overlayOpen=1;   
   }
   if(i==7){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const z=document.getElementById('down7');
     const positionStrategy=this.overlay.position().connectedTo(z,{originX:'start',originY:'top'},{overlayX:'start',overlayY:'bottom'});
     this.templatePortal= new TemplatePortal(this.backlogTemp,this._viewContainerRef);
@@ -293,6 +357,7 @@ load1(){
       positionStrategy,
      });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
   }   
   
 }
@@ -339,10 +404,13 @@ load1(){
           positionStrategy,
          });
        this.overlayRef.attach(this.templatePortal);
-      
+       this.overlayOpen=1;
   }
   console.log('3-dot function-1');
   if(i==1){
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const v=document.getElementById('header1');
     const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
     this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -351,9 +419,13 @@ load1(){
         positionStrategy,
        });
      this.overlayRef.attach(this.templatePortal);
+     this.overlayOpen=1;
     
 } 
 if(i==2){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header2');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -362,9 +434,13 @@ if(i==2){
       positionStrategy,
      });
    this.overlayRef.attach(this.templatePortal);
-  
+   this.overlayOpen=1;
+    
 } 
 if(i==3){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header3');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -373,9 +449,13 @@ if(i==3){
       positionStrategy,
      });
    this.overlayRef.attach(this.templatePortal);
-  
+   this.overlayOpen=1;
+    
 } 
 if(i==4){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header4');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -383,9 +463,14 @@ if(i==4){
     this.overlayRef = this.overlay.create({ 
       positionStrategy,
      });
-   this.overlayRef.attach(this.templatePortal);  
+   this.overlayRef.attach(this.templatePortal); 
+   this.overlayOpen=1;
+     
 }  
 if(i==5){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header5');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -394,9 +479,13 @@ if(i==5){
       positionStrategy,
      });
    this.overlayRef.attach(this.templatePortal);
-  
+   this.overlayOpen=1;
+    
 } 
 if(i==6){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header6');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -405,9 +494,13 @@ if(i==6){
       positionStrategy,
      });
    this.overlayRef.attach(this.templatePortal);
-  
+   this.overlayOpen=1;
+    
 }  
 if(i==7){
+  if(this.overlayOpen==1){
+    this.overlayRef.dispose();
+  }
   const v=document.getElementById('header7');
   const positionStrategy=this.overlay.position().connectedTo(v,{originX:'end',originY:'bottom'},{overlayX:'start',overlayY:'top'});
   this.templatePortal= new TemplatePortal(this.subMenuTemplate,this._viewContainerRef);
@@ -416,7 +509,8 @@ if(i==7){
       positionStrategy,
      });
    this.overlayRef.attach(this.templatePortal);
-  
+   this.overlayOpen=1;
+    
 }  
   }   
 
