@@ -76,7 +76,7 @@ export class DisplayComponent implements OnInit {
    selectedPortal: Portal<any>;
  gridContinerArray=displayStructure;
   templatePortal:TemplatePortal<any>;  //----------
-   currentTask = ["Hey1", "Done1", "So is it working properly or not??"];
+   currentTask = ["Hey1", "Done1", "So is it working properly or not??","Go to work","Netflix and chill","Dinner","Sleep"];
   validate = ["lol"];
   backlog=['Working?','Demo'];
   myForm: FormGroup;
