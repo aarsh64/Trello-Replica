@@ -22,6 +22,7 @@ h5 {
 }
 .dots{
   margin-left: 100px;
+  cursor: pointer;
 }
 div[class*="card"]{
   position: relative;
@@ -133,6 +134,7 @@ button[class*="addTask"] {
   background-color: #E6ECF3;
   box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 .header {
   overflow: hidden;
@@ -245,6 +247,7 @@ button[class*="addTask"] {
   background-color: #0a81fa;
   border-radius: 10%;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 /* That cross exit button */
 .cross {
@@ -253,6 +256,7 @@ button[class*="addTask"] {
   background-color:transparent;
   border: none;
   box-shadow: none;
+  cursor: pointer;
 }
 input {
   height: 25px;
