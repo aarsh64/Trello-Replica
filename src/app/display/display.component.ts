@@ -836,12 +836,16 @@ console.log('length:',x);
  
 binButtonFunction(){
     console.log('entered');
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     const positionStrategy=this.overlay.position().connectedTo(this.binButton,{originX:'start',originY:'bottom'},{overlayX:'end',overlayY:'top'});
     this.templatePortal=new TemplatePortal(this.deleteList,this._viewContainerRef);
     this.overlayRef=this.overlay.create({
         positionStrategy,
     });
     this.overlayRef.attach(this.templatePortal);
+    this.overlayOpen=1;
   }
 
   // ..............To remove the whole card from the container..........

@@ -53,8 +53,10 @@
                 &nbsp; <button class="addTask"(click)="undoFunction(i)">Undo Task? </button>  
                 &nbsp;&nbsp;<button class="addTask" (click)="load1(i)">Add Task</button>
                 &nbsp;&nbsp;<button class="addTask"(click)="deleteListFunction1(index)">Remove board</button><br>
-                <span class="addTask">Select Color:</span><br>
-                &nbsp;&nbsp;<ul class="addTask" *ngFor="let d of colors;let a=index;" (click)="changeColor(a)"><li>{{d}}</li></ul>
+              </div>
+              <div>
+                  <label style="margin-left:90px;"><b>Select Color:</b></label><br><hr style="width:80%;">
+                  &nbsp;&nbsp;<ul class="addTask" *ngFor="let d of colors;let a=index;" (click)="changeColor(a)"><li>{{d}}</li></ul>
               </div>
               <div>
                 &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Move tasks to..</b></label><hr style="width:80%;">
