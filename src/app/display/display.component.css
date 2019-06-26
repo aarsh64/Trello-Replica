@@ -1,8 +1,6 @@
-.container {
+#container {
   width: auto;
-  height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
     position: relative;
 }
 .flexContainer {
@@ -26,11 +24,10 @@ h5 {
 }
 div[class*="card"]{
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 width: 240px;
 margin-left:10px;
-background-color: #e6ecf3;
+background-color:  #E6ECF3;
 color: #3d3f4c;
 height: auto;
 overflow: hidden;
@@ -38,19 +35,10 @@ border-radius: 2% 2% 2% 2%;
 position:relative;
 
 }
-
-div[id="card1"]{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 240px;
-  margin-left:10px;
-  background-color: #e6ecf3;
-  color: #3d3f4c;
-  height: auto;
-  overflow: hidden;
-  border-radius: 2% 2% 2% 2%;
-  position:relative;
+div[class*="card"][_ngcontent-jye-c2]{
+  background-color: white;
 }
+
 div[class*="gr"]{
   height:100%;
   width:auto;
@@ -61,8 +49,7 @@ div[class*="gr"]{
 }
 
 .innerCard {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:  "Open Sans", "Helvetica Neue", sans-serif;
   /* z-index: 10px; */
   font-weight: 600;
   height: auto;
@@ -71,27 +58,35 @@ div[class*="gr"]{
   padding: 5%;
   font-size: 12px;
   display: block;
-  background-color: white;
+  background-color:white;
   color: #55535b;
   margin: 2% 8% 4% 0%;
   /* position: relative; */
   cursor: pointer;
-}
+ }
 li{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px; 
 }
 li:hover{
   background:white;
   cursor: pointer;
 }
+div[class*="head"]{
 
+}
 /* the whole bottom div which contains addTask button  */
-
+div[class*="priority"]{
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f3432b;
+  margin-left: 2%;
+}
 #down {
   position: relative;
   display: flex;
+  background-color: white;
   flex-direction:row;
   padding-top: 20%;
   margin: 4% 0% 0% 4%;
@@ -99,7 +94,19 @@ li:hover{
  
 }
 /* the bottom *add-task* button */
-.addTask {
+button[class*="addTask"] {
+ color:red;
+ color: #7f8d95;
+  box-shadow: none;
+  border: none;
+  width:auto;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 550;
+  margin:0px 0px 10px 10px;
+  background-color: transparent;
+}
+.addTask{
   color: #7f8d95;
   box-shadow: none;
   border: none;
@@ -196,10 +203,11 @@ li:hover{
 
 .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  background-color:white; 
 }
 
 /*..........................Template......................... */
-.over {
+#over {
    display: flex;
   flex-direction: row;
   /* width:1fr; */
@@ -220,14 +228,19 @@ li:hover{
   width: auto;
   background-color: greenyellow;
 }
+#addCardForm{
+  height:auto;
+  width: 240px;
+  margin-bottom:-28px;
+  background-color: #E6ECF3;
+}
 /* ----------------------------------------------------  */
 /* addCard is for add button which is used to add whole new card in container...  */
-.addCard{
+#addCard1{
   text-align: center;
   padding: 5px;
   color: #c1fcfe;
   font-weight: 600;
-  background-color: #E6ECF3;
   border: #e6f2fe;
   border-radius: 4px;
   margin-left: 120px;
@@ -271,6 +284,7 @@ input {
 }
 
 .subMenuTemplate{
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   width:100%;
   border-color: black;
   border-radius: 4px;

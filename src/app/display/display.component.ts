@@ -38,6 +38,7 @@ import { viewClassName } from '@angular/compiler';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { displayStructure } from '../displayStructure';
 import { Identifiers } from '@angular/compiler/src/render3/r3_identifiers';
+import { bindCallback } from 'rxjs';
 @Component({
   selector: "app-display",
   templateUrl: "./display.component.html",
@@ -91,9 +92,9 @@ export class DisplayComponent implements OnInit {
   newArray= ['demo'];
   boardName:any;
   selectedCard: number;
-    dumb=2;
     overlayOpen=0;
-  constructor(private overlay: Overlay,private _viewContainerRef: ViewContainerRef) {}
+  colors=['Lush Green','Blue','Lemon Yellow','Dark Mode'];
+    constructor(private overlay: Overlay,private _viewContainerRef: ViewContainerRef) {}
     
   ngOnInit() {
      this.nForm = new FormGroup({
@@ -363,15 +364,18 @@ load1(){
 }
 
   sideButton() {
+    if(this.overlayOpen==1){
+      this.overlayRef.dispose();
+    }
     console.log("working.....");
       const positionStrategy=this.overlay.position().global().centerHorizontally().centerVertically();
       this.templatePortal=new TemplatePortal(this.newCardTemplate,this._viewContainerRef); 
       this.overlayRef=this.overlay.create({
-        width:10000000,
-        height:1000000,
+       
         positionStrategy  
       });
       this.overlayRef.attach(this.templatePortal);
+      this.overlayOpen=1;
   }
 
     addBoard(){
@@ -632,6 +636,128 @@ moveTo(j:number){
     }
   }
 }
+
+changeColor(a:number){
+  console.log("color-index:",a);
+let x=this.displayComp.length;
+console.log('length:',x);
+
+  for(let i=0;i<x;i++){
+    
+    
+    if(a==0){
+      let g=document.getElementsByClassName('card');
+      //  console.log('g',g);
+    let h=document.getElementsByClassName('head');
+      //  console.log('h',h);
+      let t=document.getElementsByClassName('addTask');
+      // console.log('t',t);
+      let p=document.getElementsByClassName('priority');
+      let sideButton=document.getElementById('addBoardButton');
+     for(const d of g){
+    d.style.backgroundColor="#77dd77";
+    for(const h1 of h){
+      h1.style.color="white";
+    }
+  
+      for(const m of t){
+      m.style.color="white";
+     }
+     for(const p1 of p){
+       p1.style.backgroundColor="#77dd77";
+     }   
+        sideButton.style.color="white";
+        sideButton.style.backgroundColor="#77dd77"; 
+          }
+          this.overlayRef.dispose();      
+      }
+
+    if(a==1){
+      
+      let g=document.getElementsByClassName('card');
+      //  console.log('g',g);
+    let h=document.getElementsByClassName('head');
+      //  console.log('h',h);
+      let t=document.getElementsByClassName('addTask');
+      // console.log('t',t);
+      let p=document.getElementsByClassName('priority');
+      let sideButton=document.getElementById('addBoardButton');
+      console.log('s1',sideButton);
+      //  let c=document.get(this.newCardT);
+      // console.log(c);
+      // g.style.backgroundColor="#E6F2FE";  
+   for(const d of g){
+     d.style.backgroundColor="#E6F2FE";
+   }
+   
+   for(const h1 of h){
+    h1.style.color="#2E84D2";
+  }
+
+    for(const m of t){
+    m.style.color="#2E84D2";
+   }
+   for(const p1 of p){
+     p1.style.backgroundColor="#2E84D2";
+   }   
+      sideButton.style.color="#2E84D2";
+      sideButton.style.backgroundColor="#E6F2FE";
+        }
+        this.overlayRef.dispose();
+  }  
+
+  if(a==2){
+
+    let g=document.getElementsByClassName('card');
+    //  console.log('g',g);
+  let h=document.getElementsByClassName('head');
+    //  console.log('h',h);
+    let t=document.getElementsByClassName('addTask');
+    // console.log('t',t);
+    let p=document.getElementsByClassName('priority');
+    let sideButton=document.getElementById('addBoardButton');
+    console.log('s1',sideButton);
+    for(const d of g){
+      d.style.backgroundColor="#FFE854";
+    }
+    for(const h1 of h){
+      h1.style.color='#2E84D2';
+    }
+    for(const m of t){
+      m.style.color="#2E84D2";
+    }
+    sideButton.style.backgroundColor="#FFE854";
+    sideButton.style.color="#2E84D2";
+  }
+  else if(a==3){
+    
+    let g=document.getElementsByClassName('card');
+    //  console.log('g',g);
+  let h=document.getElementsByClassName('head');
+    //  console.log('h',h);
+    let t=document.getElementsByClassName('addTask');
+    // console.log('t',t);
+    let p=document.getElementsByClassName('priority');
+    let sideButton=document.getElementById('addBoardButton');
+    console.log('s1',sideButton);
+    for(const d of g){
+      d.style.backgroundColor="black";
+    }
+    for(const h1 of h){
+      h1.style.color='#FFE854';
+    }
+    for(const m of t){
+      m.style.color="#FFE854";
+    }
+    for(const p1 of p){
+      p1.style.backgroundColor="#FFE854";
+    }
+    sideButton.style.backgroundColor="black";
+    sideButton.style.color="#FFE854";
+}  
+
+}
+
 
 // ........Add something using overlay(Overlay)for all cards................
  

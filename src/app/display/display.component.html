@@ -3,15 +3,14 @@
     <div class="flexContainer">
       <div  *ngFor="let w of displayComp;let i=index;" [class.selected]="w === SelectedCard" (click)="onTap(w,i)">
       <div id="card{{i}}" class="card">
-        <div #header >
-          <h5  #h5>
+        <div  #header >
+          <h5 class="head"  #h5>
             {{w.header}}<a id="header{{i}}" class="dots" (click)="dots(i)"><i
               style="margin-left:80%; color:#B4BBC4;"
               class="fas fa-ellipsis-h"
             ></i></a>
           </h5>
           </div>
-        <div>
           <div
           cdkDropList
           [cdkDropListData]="displayComp"
@@ -19,24 +18,23 @@
         
           class="card"
         >
-          <div class="innerCard"  *ngFor="let g of w.cardsName;" cdkDrag>
+          <div class="innerCard" id="innerCard{{i}}"  *ngFor="let g of w.cardsName;" cdkDrag>
             <span>{{g}}</span
             >
             <div >
               <br />
-              <div class="priority">
-                <div id="redStripe"></div>
+              <div >
+                <div class="priority" ></div>
              </div>
             </div>
           </div>
           </div>
-        </div>
         <br />
         <div id="down{{i}}">
           <div CdkOverlayOrigin>
           </div>
           <div #base1>
-            <button class="addTask"    
+            <button  id="addTask"class="addTask"   
             (click)="load(i)"
             
             >
@@ -54,7 +52,9 @@
                 </button><br><hr style="width:80%;">
                 &nbsp; <button class="addTask"(click)="undoFunction(i)">Undo Task? </button>  
                 &nbsp;&nbsp;<button class="addTask" (click)="load1(i)">Add Task</button>
-                &nbsp;&nbsp;<button class="addTask"(click)="deleteListFunction1(index)">Remove board</button>
+                &nbsp;&nbsp;<button class="addTask"(click)="deleteListFunction1(index)">Remove board</button><br>
+                <span class="addTask">Select Color:</span><br>
+                &nbsp;&nbsp;<ul class="addTask" *ngFor="let d of colors;let a=index;" (click)="changeColor(a)"><li>{{d}}</li></ul>
               </div><br>
               <div>
                 &nbsp;&nbsp;<label style="margin-left: 80px;"><b>Move tasks to..</b></label><hr style="width:80%;">
@@ -75,7 +75,7 @@
     
 
     <div #sideButtonId class="sideButton">
-      <button class="addBoardButton" (click)="sideButton()">
+      <button id="addBoardButton"class="addBoardButton" (click)="sideButton()">
         <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add board
       </button><br>
       <button id="binButton" #binButton style="color:white" (click)="binButtonFunction()">
@@ -89,23 +89,24 @@
 cdkConnectedOverlay
 >
 <div  class="gr{{selectedCard}}">
-  <form [formGroup]="nForm">
-    <input
-      placeholder="Enter text for the card"
-      type="text"
-      formControlName="in1"
-    />
-    <div class="over">
-      <button class="cross" type="submit" (click)="close()">
-        <i class="far fa-times-circle"></i>
-      </button>
-      <button class="addCard" [disabled]="!(this.nForm.controls.in1.valid)" (click)="add()" type="submit">Add card</button>
-    </div>
-  </form>
+    <div id="addCardForm" class="newAddBoardContainer">
+        <form  [formGroup]="nForm">
+          <input
+            placeholder="Enter text for the card"
+            type="text"
+            formControlName="in1"
+          />
+            <button class="cross" type="submit" (click)="close()">
+              <i class="far fa-times-circle"></i>
+            </button>
+            <button id="addCard1" [disabled]="!(this.nForm.controls.in1.valid)" (click)="add()" type="submit">Add card</button>
+           </form>
+      </div>
+    
 </div>
 </ng-template>
 
-<ng-template #newCardTemplate>
+<ng-template id="done2" #newCardTemplate>
   <div class="newAddBoardContainer">
     <form class="addCardForm" style="background-color:#E6ECF3;border-radius:4px;" [formGroup]="nForm">
       <label>Board Name:</label>
@@ -113,7 +114,7 @@ cdkConnectedOverlay
         <button class="cross" type="submit" (click)="close()">
           <i class="far fa-times-circle"></i>
         </button>
-      <button class="addCard" (click)="addBoard()">Add Board</button>
+      <button id="addCard" (click)="addBoard()">Add Board</button>
     </form>
     </div>
 </ng-template>
@@ -130,8 +131,6 @@ cdkConnectedOverlay
       </button>
   </div>
 </ng-template> 
-
-
 
 
 
