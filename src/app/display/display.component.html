@@ -1,6 +1,6 @@
 <div cdkDropListGroup>
   <div id="containter" class="container">
-    <div class="flexContainer">
+    <div id="flexContainer"class="flexContainer">
       <div  *ngFor="let w of displayComp;let i=index;" [class.selected]="w === SelectedCard" (click)="onTap(w,i)">
       <div id="card{{i}}" class="card">
         <div  #header >

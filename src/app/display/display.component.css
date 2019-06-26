@@ -2,6 +2,7 @@
   width: auto;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
     position: relative;
+    
 }
 .flexContainer {
   width: auto;
@@ -71,9 +72,6 @@ li{
 li:hover{
   background:white;
   cursor: pointer;
-}
-div[class*="head"]{
-
 }
 /* the whole bottom div which contains addTask button  */
 div[class*="priority"]{

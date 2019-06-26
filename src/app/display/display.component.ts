@@ -93,7 +93,7 @@ export class DisplayComponent implements OnInit {
   boardName:any;
   selectedCard: number;
     overlayOpen=0;
-  colors=['Lush Green','Blue','Lemon Yellow','Dark Mode'];
+  colors=['Default','Lush Green','Blue','Lemon Yellow','Dark Mode'];
     constructor(private overlay: Overlay,private _viewContainerRef: ViewContainerRef) {}
     
   ngOnInit() {
@@ -643,18 +643,38 @@ let x=this.displayComp.length;
 console.log('length:',x);
 
   for(let i=0;i<x;i++){
-    
-    
     if(a==0){
       let g=document.getElementsByClassName('card');
-      //  console.log('g',g);
-    let h=document.getElementsByClassName('head');
-      //  console.log('h',h);
+      let h=document.getElementsByClassName('head');
       let t=document.getElementsByClassName('addTask');
-      // console.log('t',t);
       let p=document.getElementsByClassName('priority');
       let sideButton=document.getElementById('addBoardButton');
-     for(const d of g){
+      for(const g1 of g){
+        g1.style.backgroundColor="#E6ECF3";
+      }
+      for(const h1 of h){
+        h1.style.color="#3F424D";
+      }
+      for(const t1 of t){
+        t1.style.color="#7F8D95";
+      }
+      for(const p1 of p){
+        p1.style.backgroundColor="#F3432B";
+      }
+      sideButton.style.backgroundColor="#E6ECF3";
+      sideButton.style.color="#7F8D95";
+        this.overlayRef.dispose();
+    }
+    
+    
+    if(a==1){
+      let g=document.getElementsByClassName('card');
+      let h=document.getElementsByClassName('head');
+      let t=document.getElementsByClassName('addTask');
+      let p=document.getElementsByClassName('priority');
+      let sideButton=document.getElementById('addBoardButton');
+     
+      for(const d of g){
     d.style.backgroundColor="#77dd77";
     for(const h1 of h){
       h1.style.color="white";
@@ -672,24 +692,16 @@ console.log('length:',x);
           this.overlayRef.dispose();      
       }
 
-    if(a==1){
-      
+    if(a==2){
       let g=document.getElementsByClassName('card');
-      //  console.log('g',g);
-    let h=document.getElementsByClassName('head');
-      //  console.log('h',h);
+      let h=document.getElementsByClassName('head');
       let t=document.getElementsByClassName('addTask');
-      // console.log('t',t);
       let p=document.getElementsByClassName('priority');
       let sideButton=document.getElementById('addBoardButton');
       console.log('s1',sideButton);
-      //  let c=document.get(this.newCardT);
-      // console.log(c);
-      // g.style.backgroundColor="#E6F2FE";  
-   for(const d of g){
+      for(const d of g){
      d.style.backgroundColor="#E6F2FE";
    }
-   
    for(const h1 of h){
     h1.style.color="#2E84D2";
   }
@@ -706,14 +718,11 @@ console.log('length:',x);
         this.overlayRef.dispose();
   }  
 
-  if(a==2){
+  if(a==3){
 
     let g=document.getElementsByClassName('card');
-    //  console.log('g',g);
-  let h=document.getElementsByClassName('head');
-    //  console.log('h',h);
+    let h=document.getElementsByClassName('head');
     let t=document.getElementsByClassName('addTask');
-    // console.log('t',t);
     let p=document.getElementsByClassName('priority');
     let sideButton=document.getElementById('addBoardButton');
     console.log('s1',sideButton);
@@ -729,14 +738,11 @@ console.log('length:',x);
     sideButton.style.backgroundColor="#FFE854";
     sideButton.style.color="#2E84D2";
   }
-  else if(a==3){
+  else if(a==4){
     
     let g=document.getElementsByClassName('card');
-    //  console.log('g',g);
-  let h=document.getElementsByClassName('head');
-    //  console.log('h',h);
+    let h=document.getElementsByClassName('head');
     let t=document.getElementsByClassName('addTask');
-    // console.log('t',t);
     let p=document.getElementsByClassName('priority');
     let sideButton=document.getElementById('addBoardButton');
     console.log('s1',sideButton);
@@ -746,6 +752,7 @@ console.log('length:',x);
     for(const h1 of h){
       h1.style.color='#FFE854';
     }
+   
     for(const m of t){
       m.style.color="#FFE854";
     }
